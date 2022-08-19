@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="256.0" prefWidth="310.0" style="-fx-background-color: #191615;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.FXMLController">
+   <children>
+      <TextField fx:id="pantalla" editable="false" layoutX="20.0" layoutY="13.0" prefHeight="29.0" prefWidth="268.0" promptText="0" style="-fx-background-color: #faf4f3;" />
+      <GridPane alignment="CENTER" layoutX="13.0" layoutY="55.0" prefHeight="189.0" prefWidth="282.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="95.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="botonUno" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#uno" style="-fx-background-color: #faf4f3;" text="   1   " GridPane.halignment="CENTER" />
+            <Button fx:id="botonDsos" mnemonicParsing="false" onAction="#dos" style="-fx-background-color: #faf4f3;" text="   2   " GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Button fx:id="botonTres" mnemonicParsing="false" onAction="#tres" style="-fx-background-color: #faf4f3;" text="   3   " GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Button fx:id="botonResta" mnemonicParsing="false" onAction="#resta" style="-fx-background-color: #e14118;" text="   -   " GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+            <Button fx:id="botonBorrar" mnemonicParsing="false" onAction="#botonBorrar" style="-fx-background-color: #e14118;" text="   C   " GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+            <Button fx:id="botonCuatro" mnemonicParsing="false" onAction="#cuatro" style="-fx-background-color: #faf4f3;" text="   4   " GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="botonCinco" mnemonicParsing="false" onAction="#cinco" style="-fx-background-color: #faf4f3;" text="   5   " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="botonSeis" mnemonicParsing="false" onAction="#seis" text="   6   " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="botonSuma" mnemonicParsing="false" onAction="#suma" style="-fx-background-color: #e14118;" text="   +   " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="notonLimpiar" mnemonicParsing="false" onAction="#limpiar" style="-fx-background-color: #e14118;" text="  CE   " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="botonSiete" mnemonicParsing="false" onAction="#siete" style="-fx-background-color: #faf4f3;" text="    7   " GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="botonOcho" mnemonicParsing="false" onAction="#ocho" style="-fx-background-color: #faf4f3;" text="   8   " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="nueve" mnemonicParsing="false" onAction="#nueve" style="-fx-background-color: #faf4f3;" text="   9   " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="botonMulti" mnemonicParsing="false" onAction="#multi" style="-fx-background-color: #e14118;" text="   x   " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="botonReciproco" mnemonicParsing="false" onAction="#botonReciproco" style="-fx-background-color: #e14118;" text=" 1/x  " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="botonCero" mnemonicParsing="false" onAction="#cero" style="-fx-background-color: #faf4f3;" text="   0   " GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" style="-fx-background-color: #e14118;" text="  +/-  " GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="botonAcercade" mnemonicParsing="false" onAction="#botonAcercade" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #e14118;" text="Acerca de.." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="9.0" />
+               </font></Button>
+            <Button fx:id="botonDivi" mnemonicParsing="false" onAction="#divi" style="-fx-background-color: #e14118;" text="   /   " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="botonIgual" mnemonicParsing="false" onAction="#igual" prefWidth="44.0" style="-fx-background-color: #e14118;" text="   =   " GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
